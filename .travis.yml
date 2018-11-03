@@ -1,2 +1,13 @@
 language: php
-sudo: enabled
+
+php:
+  - '5.6'
+  # - '7.0'
+  # - hhvm
+
+script: phpunit Test.php
+
+notifications:
+  slack:
+    rooms:
+      - pgshare:MqSgFDbU5zN9xRvosDXr4Xev#ci-build
